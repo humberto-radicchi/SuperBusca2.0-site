@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://superbusca.radicchi.com.br/sitemap.xml

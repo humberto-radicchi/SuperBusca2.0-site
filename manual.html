@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual SuperBusca 2.0 | Como Automatizar sua Busca por Vagas no LinkedIn</title>
+    <meta name="description"
+        content="Aprenda a configurar o SuperBusca 2.0. Guia completo sobre busca automática de vagas no LinkedIn, Grip Score, AutoInput e networking estratégico.">
+    <link rel="canonical" href="https://superbusca.radicchi.com.br/manual.html">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="brand">
+            <img src="assets/icon48.png" alt="Logo SuperBusca 2.0 - Automação de Carreira">
+            <div>
+                <h1>SuperBusca 2.0</h1>
+                <p class="subtitle">Simplificando a busca por vagas</p>
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="manual.html" class="active">Manual</a></li>
+                <li><a href="privacidade.html">Privacidade</a></li>
+                <li><a href="termos.html">Termos de Serviço</a></li>
+            </ul>
+        </nav>
+        <a href="https://chrome.google.com/webstore" class="btn btn-primary">Instalar Grátis</a>
+    </header>
+
+    <div class="container manual-layout">
+        <aside class="manual-sidebar">
+            <h3>Neste Manual</h3>
+            <ul>
+                <li><a href="#primeiros-passos">1. Primeiros Passos</a></li>
+                <li><a href="#dashboard">2. Interface Dashboard</a></li>
+                <li><a href="#perfil">3. Aba Perfil & Grip</a></li>
+                <li><a href="#busca">4. Aba Busca & URLs</a></li>
+                <li><a href="#contatos">5. Aba Contatos & Networking</a></li>
+                <li><a href="#autoinput">6. AutoInput Automático</a></li>
+                <li><a href="#geral">7. Configurações Gerais</a></li>
+                <li><a href="#parametros">8. Todos os Parâmetros</a>
+                    <ul class="sub-menu">
+                        <li><a href="#p-header">8.1 Cabeçalho (Header)</a></li>
+                        <li><a href="#p-lista">8.2 Lista de Vagas</a></li>
+                        <li><a href="#p-detalhes">8.3 Detalhes da Vaga</a></li>
+                        <li><a href="#p-perfil">8.4 Aba Perfil</a></li>
+                        <li><a href="#p-busca">8.5 Aba Busca</a></li>
+                        <li><a href="#p-autoinput">8.6 Aba AutoInput</a></li>
+                        <li><a href="#p-mensagens">8.7 Aba Mensagens</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+
+        <main class="manual-content">
+            <h1>Guia de Uso: Ferramenta de Vagas e Automação LinkedIn</h1>
+            <p>Seja bem-vindo ao manual oficial do SuperBusca 2.0. Aqui você encontrará tudo o que precisa para dominar
+                a ferramenta e acelerar sua recolocação.</p>
+
+            <section id="primeiros-passos">
+                <h2>1. Primeiros Passos com a Extensão para LinkedIn</h2>
+                <p>Após instalar a extensão, o primeiro passo é abrir o Dashboard clicando no ícone do SuperBusca no seu
+                    navegador. Siga esta sequência para uma configuração ideal:</p>
+                <ul>
+                    <li><strong>Sincronize seu Perfil</strong>: Vá até a aba lateral "Perfil" e clique em "Coletar
+                        Perfil". Isso permite que o robô leia suas experiências e habilidades.</li>
+                    <li><strong>Defina suas URLs de Busca</strong>: Vá até o LinkedIn, faça uma busca por vagas (ex:
+                        "Desenvolvedor React") e use o Assistente do SuperBusca (botão flutuante) para salvar essa
+                        busca.</li>
+                    <li><strong>Inicie a Busca</strong>: Clique no botão verde "Iniciar" no Dashboard para ver os
+                        primeiros resultados.</li>
+                </ul>
+            </section>
+
+            <section id="dashboard">
+                <h2>2. Interface Dashboard</h2>
+                <p>O centro de comando foi desenhado para ser intuitivo e focado em produtividade:</p>
+                <ul>
+                    <li><strong>Contadores Superiores</strong>: Mostram quantas vagas são novas, quantas você já aplicou
+                        e quantas ignorou. Clique nos números para filtrar a lista instantaneamente.</li>
+                    <li><strong>Toggle AutoBusca</strong>: Ao ativar, a extensão passará a monitorar o LinkedIn em
+                        segundo plano nos intervalos que você definir.</li>
+                    <li><strong>Lista de Vagas (Esquerda)</strong>: Organizada por ordem de aderência (Grip) por padrão.
+                        O sistema destaca vagas com "Alto Grip" com labels especiais.</li>
+                    <li><strong>Visualizador (Centro)</strong>: Aqui você lê a descrição da vaga limpa, sem o "lixo"
+                        visual do LinkedIn, e vê o score de aderência calculado.</li>
+                </ul>
+            </section>
+
+            <section id="perfil">
+                <h2>3. Aba Perfil e Score de Adereência (Grip)</h2>
+                <p>O <strong>Grip Score</strong> é o diferencial estratégico do SuperBusca 2.0. Ele compara as
+                    palavras-chave da vaga com o seu perfil coletado.</p>
+                <ul>
+                    <li><strong>Checklist de Coleta</strong>: Certifique-se de que os itens "Sobre", "Experiência" e
+                        "Skills" estão marcados como verdes. Isso garante um cálculo de precisão máxima.</li>
+                    <li><strong>Como o Score é Calculado</strong>: O robô analisa títulos de cargos, tecnologias citadas
+                        na descrição da vaga e as compara com as competências e histórico em seu perfil.</li>
+                    <li><strong>Dica</strong>: Se o score estiver baixo para uma vaga que você domina, verifique se
+                        aquela competência está escrita no seu LinkedIn da mesma forma que na vaga.</li>
+                </ul>
+            </section>
+
+            <section id="busca">
+                <h2>4. Aba Busca e Parametrização</h2>
+                <p>Ajuste o que o robô deve "caçar" para você:</p>
+                <ul>
+                    <li><strong>Palavras-Chave Obrigatórias</strong>: Termos que a vaga *precisa* ter (ex: "Remoto",
+                        "Java").</li>
+                    <li><strong>Palavras-Chave Restritas</strong>: Termos que fazem o robô descartar a vaga na hora (ex:
+                        "Presencial", "Estágio").</li>
+                    <li><strong>Apenas Português</strong>: Ative este filtro para ignorar vagas escritas em inglês ou
+                        outros idiomas automaticamente.</li>
+                </ul>
+            </section>
+
+            <section id="contatos">
+                <h2>5. Aba Contatos e Networking</h2>
+                <p>Conecte-se com quem decide a contratação:</p>
+                <ul>
+                    <li><strong>Descoberta Automática</strong>: O robô identifica recrutadores e gestores da vaga
+                        durante a varredura.</li>
+                    <li><strong>Mensagem de Conexão</strong>: Configure uma mensagem amigável padrão na aba Contatos.
+                        Você pode usar a variável <strong>[Título da Vaga]</strong> para personalizar o convite
+                        automaticamente.</li>
+                    <li><strong>Ação em 1 Clique</strong>: Basta clicar no botão de conexão ao lado do nome do contato.
+                        O robô faz o resto.</li>
+                </ul>
+            </section>
+
+            <section id="autoinput">
+                <h2>6. AutoInput (Preenchimento Automático)</h2>
+                <p>Ganhe velocidade em sites como Gupy, Greenhouse e Lever:</p>
+                <ul>
+                    <li><strong>Memória de Preenchimento</strong>: Na primeira vez que você preenche um formulário novo,
+                        o SuperBusca "aprende".</li>
+                    <li><strong>Execução</strong>: Ao abrir uma vaga externa vinda do Dashboard, o robô destacará os
+                        campos reconhecidos com uma borda **Laranja** e preencherá seus dados salvos.</li>
+                </ul>
+            </section>
+
+            <section id="geral">
+                <h2>7. Configurações Gerais e Segurança</h2>
+                <ul>
+                    <li><strong>Intervalo de AutoBusca</strong>: Recomendamos 30 ou 60 minutos para não sobrecarregar
+                        seu navegador.</li>
+                    <li><strong>Limites de Paginação</strong>: Evite ler mais de 5 a 10 páginas por busca para manter
+                        sua conta do LinkedIn segura.</li>
+                    <li><strong>Backup de Dados</strong>: Como seus dados ficam salvos localmente, use o botão
+                        "Exportar" para salvar uma cópia de suas vagas e configurações periodicamente.</li>
+                </ul>
+            </section>
+
+            <section id="parametros">
+                <h2>8. Guia Detalhado de Busca de Vagas e Interface</h2>
+                <p>Abaixo você encontra a explicação técnica de cada campo de entrada e elemento de interface disponível
+                    no sistema, organizado por blocos de funcionalidades.</p>
+
+                <h3 id="p-header">8.1 Cabeçalho Global (Header)</h3>
+                <table class="manual-table">
+                    <thead>
+                        <tr>
+                            <th>Elemento</th>
+                            <th>Ação/Função</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Contadores (Novas/Aplicadas/Ignoradas)</strong></td>
+                            <td>Exibem o total de vagas em cada categoria. Clique nos cartões para filtrar a lista
+                                rapidamente.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Botão Iniciar (Busca Manual)</strong></td>
+                            <td>Dispara uma varredura imediata em todas as suas URLs salvas.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Botão Guia (Ícone de Livro)</strong></td>
+                            <td>Abre o assistente de missões interativo para ajudar na configuração inicial.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Botão Notificações (Ícone de Sino)</strong></td>
+                            <td>Exibe alertas importantes sobre o status das buscas e atualizações do sistema.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Toggle AutoBusca</strong></td>
+                            <td>Ativa ou desativa o monitoramento automático em segundo plano.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Timer Próxima</strong></td>
+                            <td>Exibe a contagem regressiva para a próxima execução automática programada.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 id="p-lista">8.2 Painel de Lista de Vagas</h3>
+                <table class="manual-table">
+                    <thead>
+                        <tr>
+                            <th>Elemento</th>
+                            <th>Ação/Função</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Filtros de Status (Ícones)</strong></td>
+                            <td>Alterna a visualização da lista entre vagas <strong>Novas</strong> (Estrela),
+                                <strong>Aplicadas</strong> (Check) e <strong>Ignoradas</strong> (X).
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Dropdown de Ordenação</strong></td>
+                            <td>Permite reordenar a lista por Aderência (Grip), Data de Postagem, Empresa, Título ou
+                                Qtd. de Candidatos.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Botão Atualizar (Refresh)</strong></td>
+                            <td>Recarrega a lista do banco de dados local para refletir mudanças recentes.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Botão Ignorar (X no Card)</strong></td>
+                            <td>Permite descartar uma vaga rapidamente sem precisar abrir os detalhes dela.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Card da Vaga</strong></td>
+                            <td>Clique para abrir os detalhes. O card mostra o Grip Score, Empresa, Localização e tempo
+                                de anúncio.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 id="p-detalhes">8.3 Visualizador de Detalhes da Vaga</h3>
+                <table class="manual-table">
+                    <thead>
+                        <tr>
+                            <th>Elemento</th>
+                            <th>Ação/Função</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Botão Candidatar-se (Verde/Check)</strong></td>
+                            <td>Abre a vaga no site original e marca automaticamente como "Aplicada" no sistema.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Botão Ignorar (Vermelho)</strong></td>
+                            <td>Remove a vaga da lista de "Novas" e a move para o histórico de "Ignoradas".</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Link da Vaga & Copiar</strong></td>
+                            <td>Permite visualizar e copiar a URL direta da postagem para compartilhamento.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Botão Coletar Contatos</strong></td>
+                            <td>Busca ativamente por recrutadores e gestores vinculados à empresa no LinkedIn.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Detalhamento de Aderência</strong></td>
+                            <td>Exibe quais palavras-chave do seu perfil deram "match" com a descrição da vaga.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 id="p-perfil">8.4 Aba Perfil (Configurações Profissionais)</h3>
+                <table class="manual-table">
+                    <thead>
+                        <tr>
+                            <th>Campo</th>
+                            <th>Localização</th>
+                            <th>Funcionalidade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>URL do Perfil</strong></td>
+                            <td>Topo da Aba Perfil</td>
+                            <td>O link do seu perfil público do LinkedIn. Necessário para o robô saber quem você é.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Botão Coletar Perfil</strong></td>
+                            <td>Abaixo da URL</td>
+                            <td>Inicia a extração de dados (Bio, Experiência, Habilidades) para alimentar o cálculo de
+                                Grip.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Checklist de Dados</strong></td>
+                            <td>Grade central</td>
+                            <td>Indicadores visuais. Itens em <span style="color:var(--sb-success)">Verde</span> estão
+                                prontos; em <span style="color:var(--sb-danger)">Vermelho</span> os dados estão ausentes
+                                no perfil.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 id="p-busca">8.5 Aba Busca de Vagas (Motor de Captura)</h3>
+                <table class="manual-table">
+                    <thead>
+                        <tr>
+                            <th>Campo</th>
+                            <th>Funcionalidade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Tempo de AutoBusca</strong></td>
+                            <td>Define de quanto em quanto tempo o robô varre as URLs em busca de novas oportunidades.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Apenas vagas em PT-BR</strong></td>
+                            <td>Garante que o robô ignore automaticamente descrições em inglês ou outros idiomas.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Coletar Contatos Strategistas</strong></td>
+                            <td>Ativa a busca por perfis de RH e liderança da empresa que publicou a vaga.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Preferências de Trabalho</strong></td>
+                            <td>Define se você aceita Remoto, Híbrido ou Presencial. Influencia o seu score de
+                                aderência.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Minha Localização</strong></td>
+                            <td>Sua cidade base. O robô a usa para verificar a viabilidade geográfica da vaga.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Páginas Máximas</strong></td>
+                            <td>Controla a profundidade da busca no LinkedIn (Vagas e Contatos).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Dados Retidos</strong></td>
+                            <td>Quantidade de dias que uma vaga permanecerá salva no seu histórico antes da limpeza.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>URL de Busca & Apelido</strong></td>
+                            <td>Onde você cadastra os links do LinkedIn. O apelido ajuda a organizar as abas de busca.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Palavras Obrigatórias</strong></td>
+                            <td>Vagas que não contiverem estes termos no título serão descartadas imediatamente.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Palavras Restritas</strong></td>
+                            <td>Vagas que contiverem estes termos no título serão bloqueadas.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 id="p-autoinput">8.6 Aba AutoInput (Formulários)</h3>
+                <table class="manual-table">
+                    <thead>
+                        <tr>
+                            <th>Campo</th>
+                            <th>Funcionalidade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Modo Gravação</strong></td>
+                            <td>Quando ligado, o robô "anota" novos campos que você preenche manualmente para
+                                automatizá-los no futuro.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Lista de Mapeamentos</strong></td>
+                            <td>Exibe todos os campos que o robô já conhece (Nome, Email, etc) e em quais sites ele já
+                                aprendeu a preencher.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 id="p-mensagens">8.7 Aba Mensagens e Contatos</h3>
+                <table class="manual-table">
+                    <thead>
+                        <tr>
+                            <th>Campo</th>
+                            <th>Funcionalidade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Mensagem Padrão</strong></td>
+                            <td>O texto que será enviado no convite de conexão do LinkedIn (limite seguro de 150
+                                caracteres).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Incluir Dados da Vaga</strong></td>
+                            <td>Adiciona automaticamente "Tenho interesse na vaga: [Título]" ao final da sua mensagem.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 SuperBusca 2.0 - Sua carreira em piloto automático.</p>
+            <div style="margin-top: 1rem;">
+                <a href="index.html" style="color: var(--sb-text-alt); margin: 0 10px;">Home</a>
+                <a href="manual.html" style="color: var(--sb-text-alt); margin: 0 10px;">Manual</a>
+                <a href="privacidade.html" style="color: var(--sb-text-alt); margin: 0 10px;">Privacidade</a>
+                <a href="termos.html" style="color: var(--sb-text-alt); margin: 0 10px;">Termos</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
