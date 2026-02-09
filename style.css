@@ -166,7 +166,7 @@ nav a.active {
     border-radius: 12px;
     margin: 1.5rem 0;
     border: 1px solid var(--sb-border);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .manual-layout {
@@ -293,7 +293,27 @@ footer {
     margin-top: 6rem;
 }
 
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+}
+
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1.5rem;
+        height: auto;
+        min-height: auto;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
     .manual-layout {
         grid-template-columns: 1fr;
     }
@@ -304,6 +324,44 @@ footer {
     }
 
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .container {
+        padding: 1.5rem;
+    }
+
+    /* Table Responsiveness */
+    .manual-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    footer {
+        padding: 3rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand h1 {
+        font-size: 1.1rem;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        gap: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
     }
 }
