@@ -161,6 +161,14 @@ nav a.active {
 }
 
 /* Manual Styles */
+.manual-img {
+    width: 100%;
+    border-radius: 12px;
+    margin: 1.5rem 0;
+    border: 1px solid var(--sb-border);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
 .manual-layout {
     display: grid;
     grid-template-columns: 280px 1fr;
