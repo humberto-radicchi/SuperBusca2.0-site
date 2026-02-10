@@ -70,12 +70,14 @@
                 <p>Após instalar a extensão, o primeiro passo é abrir o Dashboard clicando no ícone do SuperBusca no seu
                     navegador. Siga esta sequência para uma configuração ideal:</p>
                 <ul>
-                    <li><strong>Sincronize seu Perfil</strong>: Vá até a aba lateral "Perfil" e clique em "Coletar
-                        Perfil". Isso permite que o robô leia suas experiências e habilidades.</li>
-                    <li><strong>Defina suas URLs de Busca</strong>: Vá até o LinkedIn, faça uma busca por vagas (ex:
-                        "Desenvolvedor React") e use o Assistente do SuperBusca (botão flutuante) para salvar essa
-                        busca.</li>
-                    <li><strong>Inicie a Busca</strong>: Clique no botão verde "Iniciar" no Dashboard para ver os
+                    <li><strong>Sincronize seu Perfil</strong>: Vá até o <strong>Menu de Configurações</strong>
+                        (recolhido à direita) e clique na aba <strong>Perfil</strong>. Insira sua URL do LinkedIn e
+                        clique em "Coletar Perfil". Isso permite que o robô leia suas experiências e habilidades.</li>
+                    <li><strong>Defina suas URLs de Busca</strong>: No mesmo <strong>Menu de Configurações</strong>, na
+                        aba <strong>Busca de Vagas</strong>, você pode gerenciar suas URLs. Use o Assistente do
+                        SuperBusca para salvar novas buscas diretamente do LinkedIn.</li>
+                    <li><strong>Inicie a Busca</strong>: Clique no botão <strong
+                            style="color: var(--sb-primary)!important;">Iniciar</strong> no topo da página para ver os
                         primeiros resultados.</li>
                 </ul>
                 <img src="assets/superbusca-guia-configuracao-vagas.png" alt="Assistente de Missões do SuperBusca 2.0"
@@ -87,13 +89,13 @@
                 <p>O centro de comando foi desenhado para ser intuitivo e focado em produtividade:</p>
                 <ul>
                     <li><strong>Contadores Superiores</strong>: Mostram quantas vagas são novas, quantas você já aplicou
-                        e quantas ignorou. Clique nos números para filtrar a lista instantaneamente.</li>
+                        e quantas ignorou. Clique nos cartões para filtrar a lista instantaneamente.</li>
                     <li><strong>Toggle AutoBusca</strong>: Ao ativar, a extensão passará a monitorar o LinkedIn em
                         segundo plano nos intervalos que você definir.</li>
-                    <li><strong>Lista de Vagas (Esquerda)</strong>: Organizada por ordem de aderência (Grip) por padrão.
-                        O sistema destaca vagas com "Alto Grip" com labels especiais.</li>
-                    <li><strong>Visualizador (Centro)</strong>: Aqui você lê a descrição da vaga limpa, sem o "lixo"
-                        visual do LinkedIn, e vê o score de aderência calculado.</li>
+                    <li><strong>Lista de Vagas (Esquerda)</strong>: Organizada por ordem de aderência (Grip) ou data por
+                        padrão. O sistema destaca vagas com "Alto Grip" com labels especiais.</li>
+                    <li><strong>Painel de Detalhes (Centro)</strong>: Aqui você lê a descrição da vaga, vê o score de
+                        aderência e acessa contatos estratégicos para networking.</li>
                 </ul>
                 <img src="assets/superbusca-dashboard-automacao-linkedin.png" alt="Dashboard Principal"
                     class="manual-img">
@@ -257,11 +259,11 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Botão Candidatar-se (Verde/Check)</strong></td>
+                            <td><strong>Botão Candidatar-se (Var --sb-success)</strong></td>
                             <td>Abre a vaga no site original e marca automaticamente como "Aplicada" no sistema.</td>
                         </tr>
                         <tr>
-                            <td><strong>Botão Ignorar (Vermelho)</strong></td>
+                            <td><strong>Botão Ignorar (Var --sb-danger)</strong></td>
                             <td>Remove a vaga da lista de "Novas" e a move para o histórico de "Ignoradas".</td>
                         </tr>
                         <tr>
@@ -305,7 +307,7 @@
                             <td>Grade central</td>
                             <td>Indicadores visuais. Itens em <span style="color:var(--sb-success)">Verde</span> estão
                                 prontos; em <span style="color:var(--sb-danger)">Vermelho</span> os dados estão ausentes
-                                no perfil.</td>
+                                no perfil coletado.</td>
                         </tr>
                     </tbody>
                 </table>
@@ -339,7 +341,8 @@
                         </tr>
                         <tr>
                             <td><strong>Minha Localização</strong></td>
-                            <td>Sua cidade base. O robô a usa para verificar a viabilidade geográfica da vaga.</td>
+                            <td>Sua cidade base. O robô a usa para verificar a viabilidade geográfica da vaga (calculado
+                                no Grip).</td>
                         </tr>
                         <tr>
                             <td><strong>Páginas Máximas</strong></td>
