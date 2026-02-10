@@ -41,9 +41,9 @@
             <ul>
                 <li><a href="#primeiros-passos">1. Primeiros Passos</a></li>
                 <li><a href="#dashboard">2. Interface Dashboard</a></li>
-                <li><a href="#perfil">3. Aba Perfil & Grip</a></li>
-                <li><a href="#busca">4. Aba Busca & URLs</a></li>
-                <li><a href="#contatos">5. Aba Contatos & Networking</a></li>
+                <li><a href="#perfil">3. Perfil & Grip</a></li>
+                <li><a href="#busca">4. Busca & URLs</a></li>
+                <li><a href="#contatos">5. Contatos e Networking</a></li>
                 <li><a href="#autoinput">6. AutoInput Automático</a></li>
                 <li><a href="#geral">7. Configurações Gerais</a></li>
                 <li><a href="#parametros">8. Todos os Parâmetros</a>
@@ -80,8 +80,8 @@
                             style="color: var(--sb-primary)!important;">Iniciar</strong> no topo da página para ver os
                         primeiros resultados.</li>
                 </ul>
-                <img src="assets/superbusca-guia-configuracao-vagas.png" alt="Assistente de Missões do SuperBusca 2.0"
-                    class="manual-img">
+                <img src="assets/prints/superbusca-guia-configuracao-vagas.png"
+                    alt="Assistente de Missões do SuperBusca 2.0" class="manual-img">
             </section>
 
             <section id="dashboard">
@@ -97,14 +97,14 @@
                     <li><strong>Painel de Detalhes (Centro)</strong>: Aqui você lê a descrição da vaga, vê o score de
                         aderência e acessa contatos estratégicos para networking.</li>
                 </ul>
-                <img src="assets/superbusca-dashboard-automacao-linkedin.png" alt="Dashboard Principal"
+                <img src="assets/prints/superbusca-dashboard-automacao-linkedin.png" alt="Dashboard Principal"
                     class="manual-img">
-                <img src="assets/superbusca-notificacoes-alertas-linkedin.png" alt="Central de Notificações"
+                <img src="assets/prints/superbusca-notificacoes-alertas-linkedin.png" alt="Central de Notificações"
                     class="manual-img">
             </section>
 
             <section id="perfil">
-                <h2>3. Aba Perfil e Score de Adereência (Grip)</h2>
+                <h2>3. Perfil e Score de Adereência (Grip)</h2>
                 <p>O <strong>Grip Score</strong> é o diferencial estratégico do SuperBusca 2.0. Ele compara as
                     palavras-chave da vaga com o seu perfil coletado.</p>
                 <ul>
@@ -115,27 +115,49 @@
                     <li><strong>Dica</strong>: Se o score estiver baixo para uma vaga que você domina, verifique se
                         aquela competência está escrita no seu LinkedIn da mesma forma que na vaga.</li>
                 </ul>
-                <img src="assets/superbusca-perfil-grip-score-carreira.png" alt="Configurações de Perfil e Competências"
-                    class="manual-img">
+                <img src="assets/prints/superbusca-perfil-grip-score-carreira.png"
+                    alt="Configurações de Perfil e Competências" class="manual-img">
+                <div class="execution-demo">
+                    <p class="demo-label">Valor na Prática: Score de Aderência</p>
+                    <img src="assets/prints/superbusca-execucao-analise-perfil-linkedin.png"
+                        alt="Exemplo de Grip Score em execução" class="manual-img execution-img">
+                </div>
             </section>
 
             <section id="busca">
-                <h2>4. Aba Busca e Parametrização</h2>
+                <h2>4. Busca e Parametrização</h2>
                 <p>Ajuste o que o robô deve "caçar" para você:</p>
                 <ul>
-                    <li><strong>Palavras-Chave Obrigatórias</strong>: Termos que a vaga *precisa* ter (ex: "Remoto",
-                        "Java").</li>
-                    <li><strong>Palavras-Chave Restritas</strong>: Termos que fazem o robô descartar a vaga na hora (ex:
-                        "Presencial", "Estágio").</li>
-                    <li><strong>Apenas Português</strong>: Ative este filtro para ignorar vagas escritas em inglês ou
-                        outros idiomas automaticamente.</li>
+                    <li><strong>Gerenciador de URLs</strong>: O SuperBusca permite que você cadastre múltiplas buscas do
+                        LinkedIn. Para facilitar, use o <strong>Assistente de URLs</strong> diretamente na página de
+                        vagas do LinkedIn para salvar novas segmentações com um clique.</li>
+                    <li><strong>Palavras-Chave Estratégicas</strong>:
+                        <ul>
+                            <li><strong>Obrigatórias</strong>: Termos que o título da vaga *precisa* ter (ex: "Remoto",
+                                "Sênior"). Vagas sem esses termos são descartadas.</li>
+                            <li><strong>Restritas</strong>: Termos que bloqueiam a vaga (ex: "Estágio", "Presencial").
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong>Filtros Avançados</strong>: Configure o tempo de retenção dos dados (quantos dias as
+                        vagas ficam no seu histórico) e se deseja coletar apenas vagas em Português.</li>
+                    <li><strong>AutoBusca Cíclica</strong>: Ative o monitoramento automático para que o robô varra suas
+                        URLs em busca de novidades a cada intervalo definido (ex: a cada 60 minutos).</li>
                 </ul>
-                <img src="assets/superbusca-filtros-busca-vagas-avancada.png" alt="Parâmetros de Busca de Vagas"
-                    class="manual-img">
+                <div class="execution-demo">
+                    <p class="demo-label">Execução: Assistente de URLs no LinkedIn</p>
+                    <img src="assets/prints/superbusca-assistente-url-linkedin.png"
+                        alt="Assistente de URLs em execução no LinkedIn" class="manual-img">
+                </div>
+                <div class="execution-demo">
+                    <p class="demo-label">Execução: Monitoramento em Segundo Plano (AutoBusca)</p>
+                    <img src="assets/prints/superbusca-status-autobusca-linkedin.png"
+                        alt="Status do AutoBusca no LinkedIn" class="manual-img">
+                </div>
             </section>
 
             <section id="contatos">
-                <h2>5. Aba Contatos e Networking</h2>
+                <h2>5. Contatos e Networking</h2>
                 <p>Conecte-se com quem decide a contratação:</p>
                 <ul>
                     <li><strong>Descoberta Automática</strong>: O robô identifica recrutadores e gestores da vaga
@@ -146,6 +168,16 @@
                     <li><strong>Ação em 1 Clique</strong>: Basta clicar no botão de conexão ao lado do nome do contato.
                         O robô faz o resto.</li>
                 </ul>
+                <div class="execution-demo">
+                    <p class="demo-label">Execução: Busca de Contatos Estratégicos</p>
+                    <img src="assets/prints/superbusca-execucao-busca-contatos-linkedin.png"
+                        alt="Busca de contatos em execução" class="manual-img execution-img">
+                </div>
+                <div class="execution-demo">
+                    <p class="demo-label">Valor na Prática: Lista de Contatos na Vaga</p>
+                    <img src="assets/prints/superbusca-lista-contatos-vaga.png"
+                        alt="Lista de contatos estratégicos detalhada" class="manual-img">
+                </div>
             </section>
 
             <section id="autoinput">
@@ -157,6 +189,11 @@
                     <li><strong>Execução</strong>: Ao abrir uma vaga externa vinda do Dashboard, o robô destacará os
                         campos reconhecidos com uma borda **Laranja** e preencherá seus dados salvos.</li>
                 </ul>
+                <div class="execution-demo">
+                    <p class="demo-label">Execução: AutoInput em Sites de Vaga</p>
+                    <img src="assets/prints/superbusca-execucao-autoinput-linkedin.png" alt="AutoInput em execução"
+                        class="manual-img execution-img">
+                </div>
             </section>
 
             <section id="geral">
@@ -177,6 +214,8 @@
                     no sistema, organizado por blocos de funcionalidades.</p>
 
                 <h3 id="p-header">8.1 Cabeçalho Global (Header)</h3>
+                <img src="assets/prints/superbusca-cabecalho-extensao-linkedin.png" alt="Cabeçalho e Controles Globais"
+                    class="manual-img">
                 <table class="manual-table">
                     <thead>
                         <tr>
@@ -214,6 +253,8 @@
                 </table>
 
                 <h3 id="p-lista">8.2 Painel de Lista de Vagas</h3>
+                <img src="assets/prints/superbusca-lista-vagas-linkedin.png" alt="Lista de Vagas e Filtros"
+                    class="manual-img">
                 <table class="manual-table">
                     <thead>
                         <tr>
@@ -250,6 +291,8 @@
                 </table>
 
                 <h3 id="p-detalhes">8.3 Visualizador de Detalhes da Vaga</h3>
+                <img src="assets/prints/superbusca-detalhes-vaga-score.png" alt="Detalhes da Vaga e Ações"
+                    class="manual-img">
                 <table class="manual-table">
                     <thead>
                         <tr>
@@ -281,7 +324,9 @@
                     </tbody>
                 </table>
 
-                <h3 id="p-perfil">8.4 Aba Perfil (Configurações Profissionais)</h3>
+                <h3 id="p-perfil">8.4 Perfil (Configurações Profissionais)</h3>
+                <img src="assets/prints/superbusca-configuracao-perfil-grip-score.png" alt="Configuração de Perfil"
+                    class="manual-img">
                 <table class="manual-table">
                     <thead>
                         <tr>
@@ -312,7 +357,9 @@
                     </tbody>
                 </table>
 
-                <h3 id="p-busca">8.5 Aba Busca de Vagas (Motor de Captura)</h3>
+                <h3 id="p-busca">8.5 Busca de Vagas (Motor de Captura)</h3>
+                <img src="assets/prints/superbusca-configuracao-busca-vagas.png" alt="Configuração de Busca e Filtros"
+                    class="manual-img">
                 <table class="manual-table">
                     <thead>
                         <tr>
@@ -369,7 +416,9 @@
                     </tbody>
                 </table>
 
-                <h3 id="p-autoinput">8.6 Aba AutoInput (Formulários)</h3>
+                <h3 id="p-autoinput">8.6 AutoInput (Formulários)</h3>
+                <img src="assets/prints/superbusca-configuracao-autoinput.png" alt="Configuração de AutoInput"
+                    class="manual-img">
                 <table class="manual-table">
                     <thead>
                         <tr>
@@ -391,7 +440,11 @@
                     </tbody>
                 </table>
 
-                <h3 id="p-mensagens">8.7 Aba Mensagens e Contatos</h3>
+                <h3 id="p-mensagens">8.7 Mensagens e Contatos</h3>
+                <img src="assets/prints/superbusca-configuracao-mensagens-conexao.png" alt="Configuração de Mensagens"
+                    class="manual-img">
+                <img src="assets/prints/superbusca-execucao-conexao-linkedin.png" alt="Execução de Conexão no LinkedIn"
+                    class="manual-img">
                 <table class="manual-table">
                     <thead>
                         <tr>
